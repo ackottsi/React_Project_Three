@@ -3,6 +3,7 @@ import { Route, Link, Switch } from 'react-router-dom';
 import '../Header.css';
 import Articles from './Articles';
 import Search from './Search';
+import Login from './Login';
 
 
 const Header = (props) => {
@@ -27,6 +28,7 @@ const Header = (props) => {
           <Search />
           <Link className="headerLink" to="/">Movie List Page</Link>
           <Link className="headerLink" to="/Login">LogIn</Link>
+          <Login/>
         </div>
         <div className="headerBottomBorder"></div>
       </nav>
