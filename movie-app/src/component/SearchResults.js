@@ -23,7 +23,7 @@ class SearchResults extends Component {
     const movieSearch = this.props.location.state.title
     const movieData1 = await axios.get(`http://www.omdbapi.com/?apikey=38e29c7e&s=${movieSearch}`)
     const resultsString=movieData1.data.Response;
-    console.log(movieData1)
+    // console.log(movieData1)
    
     if(resultsString==="False"){
   
@@ -48,24 +48,27 @@ class SearchResults extends Component {
   //component did Update handles all subsequent searches after initial search
   componentDidUpdate= async (prevProps)=>{
     
-    // console.log(prevProps.location)
-    // console.log(this.props.location)
+    
     if(this.props.location.state.title!==prevProps.location.state.title){
-      
+      console.log(prevProps.location)
+      console.log(this.props.location)
+  
     // console.log("component did update ran!")
     const movieSearch = this.props.location.state.title
     const movieData1 = await axios.get(`http://www.omdbapi.com/?apikey=38e29c7e&s=${movieSearch}`)
     const resultsString=movieData1.data.Response;
-    console.log(movieData1.data.Response)
+    // console.log(movieData1.data.Response)
 
     if(resultsString==="False"){
-  
+     
       this.setState ({
        searchTerm: movieSearch,
        movieData: movieData1.data.Search,
        apiDataLoaded: true,
        searchResponse:false
      })
+
+ 
    }
      else {this.setState ({
        searchTerm: movieSearch,
@@ -83,7 +86,7 @@ class SearchResults extends Component {
 
   render() {
     // console.log(this.state.movieData)
-    console.log(this.state.searchResponse)
+    // console.log(this.state.searchResponse)
   
     return (
       <div>
