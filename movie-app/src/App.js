@@ -90,7 +90,7 @@ class App extends Component{
             <SearchResults {...routerProps}/>
           )}/>
 
-          <Articles news={this.state.news} />
+      
         
 
           {/* line below will be used when login functionality is created */}
@@ -99,8 +99,8 @@ class App extends Component{
           <Route exact path="/Register" render={(routerProps)=>(
           <Register {...routerProps}/>
           )}/>
-
-           
+          
+          <Articles news={this.state.news} />
         
           </Switch>
        

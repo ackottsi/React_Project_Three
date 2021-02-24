@@ -44,7 +44,7 @@ import Register from './Register'
     
 
         return(  
-            <div>      
+            <div className="Login-Container">      
             <form className="Login-Form"  onSubmit={userLogin}>
                 <label className="Login-Label" htmlFor="username">username</label>
                 <input className="Login-Input"

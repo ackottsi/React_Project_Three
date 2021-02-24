@@ -1,32 +1,47 @@
+.Login-Container{
+  display: flex;
+  align-items: center;
+justify-content: center;
+color:white;
+}
+
 
 
 .Login-Form{
 display:flex;
 align-items: center;
+justify-content: center;
 }
 
 .Login-Input{
 border:solid black;
 border-width: thin;
 width:170ppx;
-font-size: 24px;
+font-size: 12px;
 
 }
 
-.Login-Submit{
-  border:solid black;
-border-width: thin;
-font-size: 20px;
-margin-top: 20px;
-background-color:lemonchiffon;
-height: 40px;
-width:120px;
-border-radius: 10px;
+
+.Login-Submit {
+    display: flex;
+    border: solid black;
+    border-width: thin;
+    font-size: 14px;
+    margin-top: 0px;
+    background-color: lemonchiffon;
+    height: 20px;
+    width: 72px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .Login-Label{
+  display: flex;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
 }
 
 .Register-Link{

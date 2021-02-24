@@ -28,7 +28,7 @@ const Header = (props) => {
           <Search />
           <Link className="headerLink" to="/">Movie List Page</Link>
           <Link className="headerLink" to="/Login">LogIn</Link>
-          <Login/>
+          <Login className="headerLink"/>
         </div>
         <div className="headerBottomBorder"></div>
       </nav>
