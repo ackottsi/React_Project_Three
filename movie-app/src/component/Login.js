@@ -67,7 +67,7 @@ import Register from './Register'
                />
             </form>
             <div className="Register-Link">
-                <h4>Not a user?  Sign up {<Link to="/Register"> Here</Link>}</h4>
+                <h4 className="Signup-Here">Not a user?<br/>Sign up {<Link to="/Register"> Here</Link>}</h4>
 
             </div>
             </div>

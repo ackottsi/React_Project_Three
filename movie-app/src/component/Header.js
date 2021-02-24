@@ -15,6 +15,7 @@ const Header = (props) => {
       
   
       <nav>
+        <div className="Nav-Login">
         <div className="headerNav">
           <div className="logoTitleHeader">
             <img className="logoNav" src="https://i.imgur.com/zJg4M4I.png?1"></img>
@@ -29,8 +30,11 @@ const Header = (props) => {
           <Link className="headerLink" to="/">Movie List Page</Link>
           <Login className="Login-Form"/>
         </div>
+       
+        </div>
         <div className="headerBottomBorder"></div>
       </nav>
+      
     {/* <div>
       <img className="logo" src="https://i.imgur.com/zJg4M4I.png?1"></img>
     </div>
