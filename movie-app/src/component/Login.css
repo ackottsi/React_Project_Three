@@ -51,7 +51,7 @@ font-size: 10px;
 }
 
 .Register-Link{
- 
+ margin:0;
   font-size: 20px;
 }
 
@@ -59,9 +59,18 @@ font-size: 10px;
 .Signup-Here{
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-left: 10px;
-  width:100%;
-  flex-direction: column;
-  
+  flex-direction: column;  
+  text-decoration: none;
+  margin:0 0 0 20px;
+
 }
+
+.Signup-Here a:visited{
+  text-decoration: none;
+  color:brown;
+}
+
+
+
+
+

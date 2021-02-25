@@ -1,7 +1,11 @@
 .Register-Form{
+    margin-top:8%;
     display:flex;
     flex-direction: column;
     align-items: center;
+    color:white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
 }
     
 .Register-Input{
@@ -28,7 +32,3 @@ border-radius: 10px;
     margin-top: 10px;
 }
 
-.Register-Link{
-    margin-top:30px;
-    font-size: 20px;
-}
