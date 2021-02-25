@@ -16,12 +16,12 @@ const Footer = () => {
             <br></br>
             <div className="social">            
               <a href="http://www.facebook.com/sharer.php?u=http://www.google.com">
-                 Share This Link on Facebook   </a>
+              Share on <ion-icon name="logo-facebook"></ion-icon></a>
+                
               <a href="http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.google.com">
-                 Share This on Twitter</a>      
-                 <div className="logoFoot">
-                  
-                 </div>    
+              Share on <ion-icon name="logo-twitter"></ion-icon></a>
+              <div className="logoFoot">
+              </div>    
             </div>
           </div>
        </footer>
