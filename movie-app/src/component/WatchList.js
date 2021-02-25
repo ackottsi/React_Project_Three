@@ -1,9 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import '../MovieList.css';
 
 const WatchList = (props) => {
-  
   
   return (
     <div className="movieList">

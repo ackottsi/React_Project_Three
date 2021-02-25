@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { Component } from 'react';
 import '../MovieDetail.css';
-import SearchResults from './SearchResults';
+
 
 class SearchDetail extends Component {
   constructor(props) {
@@ -14,22 +14,14 @@ class SearchDetail extends Component {
 
   componentDidMount = async(props) => {
     const titleData = this.props.location.state.titledata
-    // console.log(titleData)
     const movieData1 = await axios.get(`http://www.omdbapi.com/?apikey=38e29c7e&i=${titleData}`)
-
-    // console.log(movieData1.data)
-
     this.setState ({
       movieData: movieData1.data,
       apiDataLoaded: true
     })
   }
 
-
-
-
   render() {
-    // console.log("look at this!!!")
     return (
       <div className="movie-detail-container">
         <div className = "movie-detail">
@@ -71,9 +63,6 @@ class SearchDetail extends Component {
                   <h5>Runtime:</h5><h5 className="h-var">{this.state.movieData.Runtime}</h5>
                 </div>  
               </div>
-              
-              
-              
             </div>  
           ) :
           <p>Movie detail not loaded</p>
