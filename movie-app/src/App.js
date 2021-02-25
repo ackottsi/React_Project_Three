@@ -33,7 +33,7 @@ class App extends Component{
     const movieData3=await axios.get("http://www.omdbapi.com/?apikey=38e29c7e&t=blazing+saddles")
     const movieData4=await axios.get("http://www.omdbapi.com/?apikey=38e29c7e&t=inception")
     const movieData5=await axios.get("http://www.omdbapi.com/?apikey=38e29c7e&t=caddyshack")
-    const news = await axios.get("https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=e444bb227c874f1f850afa4ab753e1fc");
+    const news = await axios.get("https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=e444bb227c874f1f850afa4ab753e1fc")
     
     const movieData = [
       movieData1.data,

@@ -1,70 +1,117 @@
-# Getting Started with Create React App
+# Project-3 (3)
+## Movie App (3)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+[Link to Movie App](Movie-App1-AndyBillEricHector.surge.sh)
 
-In the project directory, you can run:
 
-### `npm start`
+[Link to git repository](https://github.com/ackottsi/React_Project_Three) (3)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
+#### Motivation:
+Develop an application for Horse Farms to help manage the business.  Include features to track horses and trainers also the horses they train.  Include a centralized database, sign-in, login security.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
+#### Objective Level 1 (MVP) (complete): (3)
+- [x] create a pre-defined list of movies for api pull
+- [x] pull api info for each movie and create list view
+- [x] create routes and links to display separate views for each movie
+- [x] minimal styling (no images)
 
-### `npm test`
+#### Objective Level 2 (partially complete): (3)
+* [ ] ratings/likes functionality
+* [ ] comments functionality
+* [ ] user login
+* [ ] improved styling (colored backgrounds, text, and different font styles)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Objective Level 3 (partially complete): (3)
+* [x] movie search functionality
+* [ ] multiple users with login required
+* [x] improved styling (movie "cards", improved layout, animations)
 
-### `npm run build`
+---
+#### Wireframe
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Page Layout and Website Flow
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ * basic structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ![basic structure](https://i.imgur.com/LpKhx6S.png)
 
-### `npm run eject`
+ * bronze level wireframe
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    ![bronze level wireframe](https://i.imgur.com/Laf9ECm.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ * silver level wireframe
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    ![silver level wireframe](https://i.imgur.com/6p5wT5g.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ * header wireframe
 
-## Learn More
+    ![header wireframe](https://i.imgur.com/jrYMvuy.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ * footer wireframe
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ![footer wireframe](https://i.imgur.com/5NUlAMe.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+#### Technology used: (3)
+* HTML, CSS, JavaScript
+* React
+* github - used for revision control
+* Surge - used for deployment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+#### Main features: (3)
+* List of features
+ * display list of items
+ * links and routes to detailed item views
+ * search functionality
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+#### Code snippet:
+This allows for the addition or the removal of horses/trainers:
+```
+if(req.body.addOrRemove == "add") {
+    Trainer.update(req.body, {
+        where: {id: req.params.index},
+        returning: true
+    })
+```
+.....
+```
+else {
+  Trainer.update(req.body, {
+    where: {id: req.params.index},
+    returning: true
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+#### User stories:
+* As a Horse Farm Manager, I want to know who is training which horse.
+* As a Horse Farm Owner, I want to have a functional website for my customers.
+* As a Trainer, I want to know which horse my boss wants me to train.
+* As an owner, I want to see who is training my horses, using website on my
+ phone would be awesome.
+* As a Horse Trainer, I want to know which horses to focus on.
+* I am thinking about having a horse trained at this Farm and what to learn about
+ trainers and which horses they are training.
+* I found out this Fancy Horse Farm has a cool web site to keep track of
+ horses and trainers.
+* As a Horse Farm Owner, I want to keep track of the horses and trainers
+ my manager has assigned.
+* Anyone associated with this Farm would like to see pictures of the horses and
+ their Trainers.
+* As a Farm Manager I would like to be able to maintain a current list of horses and trainers on the farm.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### Room for improvement:
+1. Add a task list for each trainer with priority value.
+2. Add an activity schedule list for each horse.
+3. New page to display horse activities and trainer tasks with completion date.

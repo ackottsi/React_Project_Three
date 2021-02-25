@@ -96,7 +96,7 @@ class SearchResults extends Component {
                 <div className="resultsCardImageContainer">
                   <Link 
                     to={{
-                      pathname: `/SearchDetail/`,
+                      pathname: `./SearchDetail/`,
                       state: { titledata: movie.imdbID },
                     }}>
                       <img src={movie.Poster} alt={`${movie.Title} Poster`} />
@@ -105,7 +105,7 @@ class SearchResults extends Component {
                 </div>
                 <Link 
                     to={{
-                      pathname: `/SearchDetail/`,
+                      pathname: `./SearchDetail/`,
                       state: { titledata: movie.imdbID },
                     }}>
                     <div className="resultsCardTitle">
