@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import {Route, Link, Redirect } from 'react-router-dom';
-import SearchResults from './SearchResults';
+import {Redirect } from 'react-router-dom';
+
 
 class Search extends Component {
   constructor(props) {
@@ -57,14 +57,14 @@ class Search extends Component {
             />
           </div>          
         </form>
-        {/* {console.log(this.state.valid)} */}
+     
           { this.state.valid ? <Redirect 
             to={{
               pathname:"./SearchResults",
               state: { title: this.state.title},
             }} 
-                        />
-            : console.log("waiting for input")
+          />
+            : ''
           }
       </div>
     )
