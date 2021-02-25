@@ -9,7 +9,7 @@
 
 ---
 #### Motivation:
-
+Learning to create an app using React that allows people to see details of movies and search for movies they may be interested in.
 
 ---
 #### Objective Level 1 (MVP) (complete):
@@ -28,6 +28,7 @@
 * [x] movie search functionality
 * [ ] multiple users with login required
 * [x] improved styling (movie "cards", improved layout, animations)
+* [x] utilize React hooks
 
 ---
 #### Wireframe
@@ -66,7 +67,7 @@
 ---
 
 #### Main features:
-* List of features
+ * List of features
  * display list of items
  * links and routes to detailed item views
  * search functionality
@@ -92,11 +93,7 @@ else {
 
 ---
 
-#### User stories:
-* As a Horse Farm Manager, I want to know who is training which horse.
-
-
----
-
 #### Room for improvement:
-1. Add a task list for each trainer with priority value.
+1. Add CRUD functionality to improve watch list / watched list.
+2. Add CRUD functionality for multiple users.
+3. Add comments section and voting/like feature.
