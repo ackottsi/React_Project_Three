@@ -5,8 +5,7 @@
 }
    
 footer {
-   background-image: linear-gradient(to right, brown , yellow);     
-    
+   background-image: linear-gradient(to right, brown , yellow);       
 }
 
 .titlefoot {
@@ -20,21 +19,22 @@ footer {
     font-size: 25px;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     width: 300px;
-    }
+}
 
 .title5 {
-       
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: inline; 
     widows: 0px; 
     font-size: 35px;
-          
-    }
+}
 
 .social {
     margin-left: auto;
     margin-right: 30px;
     text-align: end;
-        }
+}
 
-
+ion-icon {
+    font-size: 32px;
+    padding: 1px;
+}

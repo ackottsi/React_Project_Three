@@ -1,7 +1,6 @@
-import React, { Component } from 'react';
-import { Route, Link, Switch } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Header.css';
-import Articles from './Articles';
 import Search from './Search';
 import Login from './Login';
 
@@ -28,8 +27,6 @@ const Header = (props) => {
               <Search />
               <Link className="headerLink" to="/">Movie List</Link>
               <Link className="headerLink" to="/WatchList">Watch List</Link>
-              {/* <Link className="headerLink" to="/Login">LogIn</Link> */}
-              
             </div>
             <div className="HeaderLoginContainer">
             <Login/>

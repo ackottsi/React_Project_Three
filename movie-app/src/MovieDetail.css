@@ -1,4 +1,5 @@
 /*css for MovieDetail component */
+
 .movie-detail-container {
     background-color: #1e272e;
     box-sizing: border-box;
@@ -8,10 +9,12 @@
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+
 .movie-detail {
     border: solid 2px #718093;
     margin: auto 5%;
 }
+
 .name-title {
     width: 30%;
     height: 15%;
@@ -21,6 +24,7 @@
     padding: 0;
     font-weight: 100; 
 }
+
 .ratings {
     display: flex;
     justify-content:space-evenly;
@@ -29,33 +33,39 @@
     margin-top: 0;
     width: 60%;
     height: 10%;
-    
 }
+
 .ratings div {
     display: flex;
     font-size: 70%;
     font-weight:400; 
 }
+
 .rating-value {
     text-align: right;
     margin-inline-start: 4px;
 }
+
 .detail-wrapper {
     display: flex;
     color: #fff;
 }
+
 .plot {
     font-weight: 400;
     font-size: 95%;
     letter-spacing: 1px;
     word-spacing: 2px;
 }
+
 .plot-summary p {
     font-size: 95%;
 }
+
 .plot-summary h3 {
     font-weight: 400;
 }
+
 .various {
     display: flex;
     justify-content: space-evenly;
@@ -67,12 +77,15 @@
     font-size: 70%;
     font-weight:400;
 }
+
 .var-div {
     display:flex;
 }   
+
 .h-var {
     margin-inline-start: 4px;
 }
+
 .add-btn {
     padding: 5px;
     font-weight: 400;
@@ -80,15 +93,9 @@
     background-color: #718093; 
     transition: background-color 0.2s, border 0.2s, color 0.2s; 
 }
+
 .add-btn:hover {
     color: #fff;
     background-color: #1e272e;
     border: solid 1px #718093;
 }
-ion-icon {
-    font-size: 32px;
-    padding: 1px;
-  } 
-
-
-

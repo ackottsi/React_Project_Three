@@ -60,7 +60,6 @@
   flex-direction: column;
   margin: 25px;
   border: solid 2px #718093;
-
 }
 
 .resultsCard a {
@@ -87,4 +86,3 @@
 .resultsCardTitle {
   margin: 0px 15px 15px 15px;
 }
-

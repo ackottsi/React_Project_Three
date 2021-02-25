@@ -77,20 +77,34 @@ Learning to create an app using React that allows people to see details of movie
 #### Code snippet:
 This allows for the addition or the removal of horses/trainers:
 ```
-if(req.body.addOrRemove == "add") {
-    Trainer.update(req.body, {
-        where: {id: req.params.index},
-        returning: true
-    })
-```
-.....
-```
-else {
-  Trainer.update(req.body, {
-    where: {id: req.params.index},
-    returning: true
-```
+//component did Update handles all subsequent searches after initial search
+componentDidUpdate= async (prevProps)=>{
 
+  if(this.props.location.state.title!==prevProps.location.state.title){
+
+    const movieSearch = this.props.location.state.title
+    const movieData1 = await axios.get(`https://www.omdbapi.com/?apikey=38e29c7e&s=${movieSearch}`);
+    const resultsString=movieData1.data.Response;
+
+    if(resultsString==="False"){
+
+      this.setState ({
+      searchTerm: movieSearch,
+      movieData: movieData1.data.Search,
+      apiDataLoaded: true,
+      searchResponse:false
+      })
+    }
+
+    else {this.setState ({
+      searchTerm: movieSearch,
+      movieData: movieData1.data.Search,
+      apiDataLoaded: true,
+      searchResponse:true
+    })};  
+  }
+}
+```
 ---
 
 #### Room for improvement:
