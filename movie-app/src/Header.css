@@ -93,6 +93,12 @@ nav {
     padding: 10px;
 }
 
+.headerLink:hover {
+ 
+    background-color:brown;
+    border-radius: 15px;
+}
+
 .search {
     width: 300px;
     border-radius: 6px;

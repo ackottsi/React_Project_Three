@@ -12,6 +12,7 @@ import SearchResults from './component/SearchResults';
 import Register from './component/Register';
 import SearchDetail from './component/SearchDetail';
 import Articles from './component/Articles';
+import WatchList from './component/WatchList';
 
 //api key 38e29c7e
 
@@ -21,6 +22,7 @@ class App extends Component{
     this.state={
       movieData:[],
       news: [],
+      watchList: [],
       apiDataLoaded: false
     }
   }
@@ -48,7 +50,14 @@ class App extends Component{
       apiDataLoaded: true
     })
   }
-  
+  addToWatchList = (foundMovie) => {
+    const addMovieToList = this.state.watchList;
+    addMovieToList.push(foundMovie);
+    
+    this.setState({
+      watchList: addMovieToList
+    })
+  };  
 
   render(){
     console.log(this.state.movieData.Title)
@@ -75,7 +84,7 @@ class App extends Component{
           )}/>
 
           <Route path="/MovieDetail/:Title" render={(routerProps)=>(        
-          <MovieDetail movieData={this.state.movieData} {...routerProps} />
+          <MovieDetail movieData={this.state.movieData} addToWatchList={this.addToWatchList} {...routerProps} />
           )}/>
 
           <Route path="/SearchDetail" render={(routerProps) => (
@@ -89,6 +98,10 @@ class App extends Component{
           <Route exact path="/SearchResults" render={(routerProps) => (
             <SearchResults {...routerProps}/>
           )}/>
+
+          <Route path="/WatchList" render={(routerProps) => (
+            <WatchList watchList={this.state.watchList}  {...routerProps} />
+          )}/>  
 
           <Articles news={this.state.news} />
         
