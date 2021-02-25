@@ -2,7 +2,7 @@
 ## Movie App
 
 
-[Link to Movie App](couchslothmovies.surge.sh)
+[Link to Movie App](https://couchslothmovies.surge.sh)
 
 
 [Link to git repository](https://github.com/ackottsi/React_Project_Three)
