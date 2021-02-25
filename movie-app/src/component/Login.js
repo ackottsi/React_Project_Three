@@ -36,14 +36,23 @@ import Register from './Register'
         // pastUsers.push(user);
         // setState({users:pastUsers})
        const foundUser=users.find((user,index)=>{
+           console.log(state.username)
            return(user.username===state.username&&user.password==state.password)
        })
+
        console.log(foundUser);
        foundUser ? props.history.push('/'): console.log("test")
-   
-       }
+       foundUser ? setState({loggedIn:true, username:state.username}) : setState ({loggedIn:false})
+        }
+        
+       
     
         return(  
+        <div>
+            {console.log(state.loggedIn)}
+            {console.log(state.username)}
+            {state.loggedIn ? <h3 className="Signed-In">Welcome {state.username}!</h3>
+                :
             <div className="Login-Container">      
             <form className="Login-Form"  onSubmit={userLogin}>
                 <label className="Login-Label" htmlFor="username">username</label>
@@ -70,7 +79,8 @@ import Register from './Register'
                 <h4 className="Signup-Here">Not a user?<br/>Sign up<br></br> {<Link to="/Register"> Here</Link>}</h4>
 
             </div>
-            </div>
+            </div>}
+        </div>
         )
     }
 
