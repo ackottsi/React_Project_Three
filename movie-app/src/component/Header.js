@@ -29,9 +29,13 @@ const Header = (props) => {
               <Link className="headerLink" to="/">Movie List</Link>
               <Link className="headerLink" to="/WatchList">Watch List</Link>
               {/* <Link className="headerLink" to="/Login">LogIn</Link> */}
-              <Login/>
+              
+            </div>
+            <div className="HeaderLoginContainer">
+            <Login/>
             </div>
             </div>
+            
             <div className="headerBottomBorder"></div>
           </nav>
         
