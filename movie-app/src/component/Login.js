@@ -10,7 +10,8 @@ import Register from './Register'
         console.log(users)
     const [state, setState]=useState({
         username:'',
-        password:''
+        password:'',
+        loggedIn:false
     })
 
 
@@ -38,13 +39,12 @@ import Register from './Register'
            return(user.username===state.username&&user.password==state.password)
        })
        console.log(foundUser);
-       foundUser ? props.history.push('/'):props.history.push('/Login')
+       foundUser ? props.history.push('/'): console.log("test")
+   
        }
     
-    
-
         return(  
-            <div>      
+            <div className="Login-Container">      
             <form className="Login-Form"  onSubmit={userLogin}>
                 <label className="Login-Label" htmlFor="username">username</label>
                 <input className="Login-Input"
@@ -67,7 +67,7 @@ import Register from './Register'
                />
             </form>
             <div className="Register-Link">
-                <h4>Not a user?  Sign up {<Link to="/Register"> Here</Link>}</h4>
+                <h4 className="Signup-Here">Not a user?<br/>Sign up<br></br> {<Link to="/Register"> Here</Link>}</h4>
 
             </div>
             </div>

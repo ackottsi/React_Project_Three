@@ -43,8 +43,8 @@ header {
     color: brown;
 }
 
-.navTitle {
-
+.Login-Form{
+    
 }
 
 .title1 {
@@ -86,7 +86,7 @@ nav {
 
 .headerLink {
     width: fit-content;
-    color: white;;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -116,3 +116,12 @@ nav {
 }
 
 
+.Nav-Login{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2f3640;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+}

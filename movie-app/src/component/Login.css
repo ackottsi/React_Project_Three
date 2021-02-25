@@ -1,36 +1,76 @@
+.Login-Container{
+
+  display: flex;
+  align-items: center;
+justify-content: center;
+flex-direction: row;
+color:white;
+width: 15%;
+text-decoration: none;
+}
+
 
 
 .Login-Form{
 display:flex;
-flex-direction: column;
 align-items: center;
+justify-content: center;
+flex-direction: column;
 }
 
 .Login-Input{
 border:solid black;
 border-width: thin;
 width:170ppx;
-font-size: 24px;
+font-size: 10px;
 
 }
 
-.Login-Submit{
-  border:solid black;
-border-width: thin;
-font-size: 20px;
-margin-top: 20px;
-background-color:lemonchiffon;
-height: 40px;
-width:120px;
-border-radius: 10px;
+
+.Login-Submit {
+    display: flex;
+    border: solid black;
+    border-width: thin;
+    font-size: 14px;
+    margin-top: 0px;
+    background-color: lemonchiffon;
+    height: 20px;
+    width: 72px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .Login-Label{
+  display: flex;
   font-size: 18px;
-  margin-top: 10px;
+  margin-top: 0px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .Register-Link{
-  margin-top:30px;
+ margin:0;
   font-size: 20px;
 }
+
+
+.Signup-Here{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;  
+  text-decoration: none;
+  margin:0 0 0 20px;
+
+}
+
+.Signup-Here a:visited{
+  text-decoration: none;
+  color:brown;
+}
+
+
+
+
+
