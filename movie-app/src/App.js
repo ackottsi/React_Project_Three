@@ -89,9 +89,13 @@ class App extends Component{
                 <Route exact path="/Register" render={(routerProps)=>(
                 <Register {...routerProps}/>
                 )}/>
+
+                <Route path="/WatchList" render={(routerProps) => (
+                <WatchList watchList={this.state.watchList}  {...routerProps} />
+                 )}/>  
                 
                 <Articles exact path="/news" news={this.state.news} />
-            </Switch>
+                 </Switch>
 
           <Footer />
 
