@@ -52,9 +52,6 @@ const MovieDetail =(props) => {
                   &#43; Add to Watchlist
                   </button>
                 </div>
-                <div className="var-div">
-                  <Link to="/WatchList">Watch List Page</Link>
-                </div>   
               </div>
             </div>  
           ) :
