@@ -82,9 +82,9 @@ class App extends Component{
             <SearchDetail {...routerProps} />
           )} />
 
-          <Route exact path="/Login" render={(routerProps)=>(        
+          {/* <Route exact path="/Login" render={(routerProps)=>(        
           <Login {...routerProps}/>
-          )}/>
+          )}/> */}
 
           <Route exact path="/SearchResults" render={(routerProps) => (
             <SearchResults {...routerProps}/>
@@ -100,7 +100,7 @@ class App extends Component{
           <Register {...routerProps}/>
           )}/>
           
-          <Articles news={this.state.news} />
+          <Articles exact path="/news" news={this.state.news} />
         
           </Switch>
        
