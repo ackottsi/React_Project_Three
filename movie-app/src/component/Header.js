@@ -6,8 +6,6 @@ import Login from './Login';
 
 
 const Header = (props) => {
-  console.log(props)
-
 
   return (  
 <div>
@@ -22,11 +20,13 @@ const Header = (props) => {
                   <h1 className="title2">Sloth</h1>
                 </div>
               </div>
-              <Link className="headerLink" to="/">Home</Link>
-              <Link className="headerLink" to="/News">News</Link>
-              <Search />
-              <Link className="headerLink" to="/">Movie List</Link>
-              <Link className="headerLink" to="/WatchList">Watch List</Link>
+              <div className="headerMiddle">
+                <Link className="headerLink" to="/">Home</Link>
+                <Link className="headerLink" to="/News">News</Link>
+                <Search />
+                <Link className="headerLink" to="/">Movie List</Link>
+                <Link className="headerLink" to="/WatchList">Watch List</Link>
+              </div>
             </div>
             <div className="HeaderLoginContainer">
             <Login/>

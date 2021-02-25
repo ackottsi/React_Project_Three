@@ -9,8 +9,15 @@ header {
     height:3px;
     width: 100%;
     background-image: linear-gradient(to right, brown , yellow);
-
 }
+
+.headerMiddle {
+    display: flex;
+    /* padding-left: 150px; */
+    margin-left: 21%;
+    align-items: center;
+}
+
 .logo {
     width: 130px;
     height: 100px;
