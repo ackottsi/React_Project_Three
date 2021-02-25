@@ -5,8 +5,9 @@
 justify-content: center;
 flex-direction: row;
 color:white;
-width: 15%;
+width: 100%;
 text-decoration: none;
+margin-left: 5px;
 }
 
 
@@ -70,6 +71,14 @@ font-size: 10px;
   color:brown;
 }
 
+.Signed-In{
+color:white;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+width:100%;
+font-size: inherit;
+margin-left: 5px;
+align-items: center;
+}
 
 
 

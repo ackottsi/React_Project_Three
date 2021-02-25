@@ -75,7 +75,7 @@ class SearchResults extends Component {
       }
   }
   
-//added the ternary below in render to prevent "cannot map undefined error".  when the api is queried, if there are too many results, or no results, it returns a response value.  the logic statements in componentDidMount and componentDidUpdate put this value to use.  if the query to the data base returns false, a message of "No Results Found" will be displayed.
+//added the ternary below in render to prevent "cannot map undefined error".  when the api is queried, if there are too many results, or no results, it returns a response value of False.  the logic statements in componentDidMount and componentDidUpdate put this value to use.  if the query to the data base returns false, a message of "No Results Found" will be displayed.
 
       
   render() {  
