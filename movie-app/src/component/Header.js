@@ -28,24 +28,12 @@ const Header = (props) => {
               <Search />
               <Link className="headerLink" to="/">Movie List</Link>
               <Link className="headerLink" to="/WatchList">Watch List</Link>
-              <Link className="headerLink" to="/Login">LogIn</Link>
-              <Login/>
+              {/* <Link className="headerLink" to="/Login">LogIn</Link>
+              <Login/> */}
             </div>
             </div>
             <div className="headerBottomBorder"></div>
           </nav>
-          
-        {/* <div>
-          <img className="logo" src="https://i.imgur.com/zJg4M4I.png?1"></img>
-        </div>
-        <div>
-          <div className="title">
-            <h1 className="title1">Couch </h1>
-            <h1 className="title2">Sloth</h1>
-            <h1 className="title1"> Movie App</h1>
-          </div>
-        </div> */}
-    
         
     </header>
   </div>
@@ -54,27 +42,3 @@ const Header = (props) => {
 
 export default Header;
 
-
-
-/*
-
-
-
-
-  console.log(props.movieData);
-  
-
-
-    <div>
-          
-            {props.movieData.map(movieData => (
-          <div className="headerPoster">
-            
-            <img className="headerPost" scr="{movieData.Poster}"></img>
-            <h3>{movieData.Title}  </h3>
-          </div>
-
-          ))}
-    </div>
-
-    */

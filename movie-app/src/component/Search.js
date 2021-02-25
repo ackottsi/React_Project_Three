@@ -60,7 +60,7 @@ class Search extends Component {
      
           { this.state.valid ? <Redirect 
             to={{
-              pathname:"./SearchResults",
+              pathname:"/SearchResults",
               state: { title: this.state.title},
             }} 
           />

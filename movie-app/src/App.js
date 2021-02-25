@@ -74,9 +74,10 @@ class App extends Component{
                     <MovieList movieData={this.state.movieData} {...routerProps}/>
                 )}/>
 
-                <Route path="/MovieDetail/:Title" render={(routerProps)=>(        
-                <MovieDetail movieData={this.state.movieData} {...routerProps} />
-                )}/>
+               <Route path="/MovieDetail/:Title" render={(routerProps)=>(        
+                <MovieDetail movieData={this.state.movieData} addToWatchList={this.addToWatchList} {...routerProps} />
+               )}/>
+
 
                 <Route path="/SearchDetail" render={(routerProps) => (
                   <SearchDetail {...routerProps} />
