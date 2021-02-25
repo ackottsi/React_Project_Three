@@ -31,6 +31,7 @@ class SearchDetail extends Component {
   render() {
     // console.log("look at this!!!")
     return (
+      <div className="movie-detail-container">
         <div className = "movie-detail">
           {this.state.apiDataLoaded ? (
             <div>
@@ -41,30 +42,34 @@ class SearchDetail extends Component {
                 {this.state.movieData.Ratings.map((ratings, index) => 
                   <div key={index}>
                     <h5>{ratings.Source}:</h5>
-                    <h5>{ratings.Value}</h5>
+                    <h5 className="rating-value">{ratings.Value}</h5>
                   </div>
                 )}
               </div>
-              <div className="wrapper">
+              <div className="detail-wrapper">
                 <div className="poster">
                   <img src={this.state.movieData.Poster} alt="movie poster" />
                 </div>
-                <div className="plot">  
-                  <h3>{this.state.movieData.Plot}</h3>
-              
+                <div className="plot-summary">  
+                  <h3 className="plot">{this.state.movieData.Plot}</h3>
                   <h3>Actors/Cast</h3>
                   <p>{this.state.movieData.Actors}</p>
-                
                   <h3>Director</h3>
                   <p>{this.state.movieData.Director}</p>
                   <h3>Languages</h3>
                   <p>{this.state.movieData.Language}</p>
                 </div>
               </div>
-              <div className="various">  
-                <h5>Genre:</h5><h5>{this.state.movieData.Genre}</h5>
-                <h5>Release Date:</h5><h5>{this.state.movieData.Released}</h5>
-                <h5>Runtime:</h5><h5>{this.state.movieData.Runtime}</h5>
+              <div className="various">
+                <div className="var-div">   
+                  <h5>Genre:</h5><h5 className="h-var">{this.state.movieData.Genre}</h5>
+                </div>  
+                <div className="var-div">   
+                  <h5>Release Date:</h5><h5 className="h-var">{this.state.movieData.Released}</h5>
+                </div>  
+                <div className="var-div"> 
+                  <h5>Runtime:</h5><h5 className="h-var">{this.state.movieData.Runtime}</h5>
+                </div>  
               </div>
               
               
@@ -74,7 +79,7 @@ class SearchDetail extends Component {
           <p>Movie detail not loaded</p>
           }
         </div>
-    
+      </div>
     )
   }  
 }

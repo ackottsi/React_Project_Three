@@ -40,6 +40,13 @@ body {
     transform: rotate(360deg);
   }
 }
-
+.movie-name {
+  width: 100%;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #f5f6fa;
+  margin: 0px 15px 15px 15px;
+}
 
  

@@ -13,43 +13,41 @@ const Header = (props) => {
   return (  
 <div>
     <header>
-      
-  
-      <nav>
-        <div className="Nav-Login">
-        <div className="headerNav">
-          <div className="logoTitleHeader">
-            <img className="logoNav" src="https://i.imgur.com/zJg4M4I.png?1"></img>
-            <div className="navTitle">
-              <h1 className="title1">couch </h1>
-              <h1 className="title2">Sloth</h1>
+          <nav>
+            <div className="Nav-Login">
+            <div className="headerNav">
+              <div className="logoTitleHeader">
+                <img className="logoNav" src="https://i.imgur.com/zJg4M4I.png?1"></img>
+                <div className="navTitle">
+                  <h1 className="title1">couch </h1>
+                  <h1 className="title2">Sloth</h1>
+                </div>
+              </div>
+              <Link className="headerLink" to="/">Home</Link>
+              <Link className="headerLink" to="/News">News</Link>
+              <Search />
+              <Link className="headerLink" to="/">Movie List</Link>
+              <Link className="headerLink" to="/WatchList">Watch List</Link>
+              <Link className="headerLink" to="/Login">LogIn</Link>
+              <Login/>
             </div>
+            </div>
+            <div className="headerBottomBorder"></div>
+          </nav>
+          
+        {/* <div>
+          <img className="logo" src="https://i.imgur.com/zJg4M4I.png?1"></img>
+        </div>
+        <div>
+          <div className="title">
+            <h1 className="title1">Couch </h1>
+            <h1 className="title2">Sloth</h1>
+            <h1 className="title1"> Movie App</h1>
           </div>
-          <Link className="headerLink" to="/">Home</Link>
-          <Link className="headerLink" to="/News">News</Link>
-          <Search />
-          <Link className="headerLink" to="/">Movie List Page</Link>
-
-          {/* <Login className="Login-Form"/> */}
-        </div>
-       
-        </div>
-        <div className="headerBottomBorder"></div>
-      </nav>
-      
-    {/* <div>
-      <img className="logo" src="https://i.imgur.com/zJg4M4I.png?1"></img>
-    </div>
-    <div>
-      <div className="title">
-        <h1 className="title1">Couch </h1>
-        <h1 className="title2">Sloth</h1>
-        <h1 className="title1"> Movie App</h1>
-      </div>
-    </div> */}
+        </div> */}
     
         
-</header>
+    </header>
   </div>
   )
 }

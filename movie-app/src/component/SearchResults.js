@@ -22,7 +22,7 @@ class SearchResults extends Component {
     const movieSearch = this.props.location.state.title
     const movieData1 = await axios.get(`http://www.omdbapi.com/?apikey=38e29c7e&s=${movieSearch}`)
     const resultsString=movieData1.data.Response;
-    console.log(movieData1)
+    // console.log(movieData1)
    
     if(resultsString==="False"){  //resultsString is a value being returned from the api.  
                                   //the state of searchResponse is set to the boolean equivalent 

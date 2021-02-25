@@ -17,9 +17,9 @@ class Search extends Component {
 
   searchConfirm = (e) => {
     e.preventDefault()
-    this.setState(prevState=>({
+    this.setState({
       valid:true     
-    }));
+    });
   }
 
 
