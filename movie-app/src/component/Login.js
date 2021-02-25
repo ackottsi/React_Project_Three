@@ -38,11 +38,9 @@ import Register from './Register'
            return(user.username===state.username&&user.password==state.password)
        })
        console.log(foundUser);
-       foundUser ? props.history.push('/'):<h1>login failed</h1>
+       foundUser ? props.history.push('/'): ''
        }
     
-    
-
         return(  
             <div className="Login-Container">      
             <form className="Login-Form"  onSubmit={userLogin}>
