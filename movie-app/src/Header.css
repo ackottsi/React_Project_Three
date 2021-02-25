@@ -43,8 +43,8 @@ header {
     color: brown;
 }
 
-.navTitle {
-
+.Login-Form{
+    
 }
 
 .title1 {
@@ -56,6 +56,17 @@ header {
     position: relative;
     bottom: 15px
     }
+    @media screen and (max-width: 1200px) {
+        .title1 {
+            display: inline; 
+            font-size: 18px;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            width: 200px;
+            color: brown;
+            position: relative;
+            bottom: -20px
+        }
+      }
 
 .title2 {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -66,6 +77,18 @@ header {
     position: relative;
     top: 5px
 }
+
+@media screen and (max-width: 1300px) {
+    .title2 {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        display: inline; 
+        widows: 1px; 
+        font-size: 25px;
+        color: brown;
+        position: relative;
+        top: 35px
+    }
+  }
 
 nav {
     position: fixed;
@@ -86,7 +109,7 @@ nav {
 
 .headerLink {
     width: fit-content;
-    color: white;;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -116,3 +139,19 @@ nav {
 }
 
 
+.Nav-Login{
+
+    display: flex;
+    justify-content: flex-start;
+    background-color: #2f3640;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.HeaderLoginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

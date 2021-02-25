@@ -84,7 +84,11 @@
     color: #fff;
     background-color: #1e272e;
     border: solid 1px #718093;
-} 
+}
+ion-icon {
+    font-size: 32px;
+    padding: 1px;
+  } 
 
 
 
