@@ -10,7 +10,8 @@ import Register from './Register'
         console.log(users)
     const [state, setState]=useState({
         username:'',
-        password:''
+        password:'',
+        loggedIn:false
     })
 
 
@@ -38,7 +39,8 @@ import Register from './Register'
            return(user.username===state.username&&user.password==state.password)
        })
        console.log(foundUser);
-       foundUser ? props.history.push('/'): ''
+       foundUser ? props.history.push('/'): console.log("test")
+   
        }
     
         return(  

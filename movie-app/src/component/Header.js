@@ -29,7 +29,8 @@ const Header = (props) => {
           <Link className="headerLink" to="/News">News</Link>
           <Search />
           <Link className="headerLink" to="/">Movie List Page</Link>
-          <Login className="Login-Form"/>
+
+          {/* <Login className="Login-Form"/> */}
         </div>
        
         </div>
