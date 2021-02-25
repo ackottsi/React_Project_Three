@@ -18,14 +18,17 @@ class SearchResults extends Component {
 
 
   //componentDidMount is needed to handle the first search
-  //in the search bar
+  //in the search bar on initial render.
   componentDidMount= async (props) => {
     const movieSearch = this.props.location.state.title
     const movieData1 = await axios.get(`http://www.omdbapi.com/?apikey=38e29c7e&s=${movieSearch}`)
     const resultsString=movieData1.data.Response;
     console.log(movieData1)
    
-    if(resultsString==="False"){
+    if(resultsString==="False"){  //resultsString is a value being returned from the api.  
+                                  //the state of searchResponse is set to the boolean equivalent 
+                                  //of the string.  The boolean value of searchResponse is used below
+                                  //in the render for a conditional rendering condition  
   
      this.setState ({
       searchTerm: movieSearch,
@@ -45,11 +48,12 @@ class SearchResults extends Component {
   }
 
 
+  
   //component did Update handles all subsequent searches after initial search
   componentDidUpdate= async (prevProps)=>{
     
-    // console.log(prevProps.location)
-    // console.log(this.props.location)
+    console.log(prevProps.location)
+    console.log(this.props.location)
     if(this.props.location.state.title!==prevProps.location.state.title){
       
     // console.log("component did update ran!")
@@ -79,12 +83,9 @@ class SearchResults extends Component {
  
    }
   
-       
-
+      
   render() {
-    // console.log(this.state.movieData)
-    console.log(this.state.searchResponse)
-  
+       
     return (
       <div>
             <div>

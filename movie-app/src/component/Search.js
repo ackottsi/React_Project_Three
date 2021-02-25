@@ -39,6 +39,7 @@ class Search extends Component {
 
 
   render() {
+    console.log("search js ran")
     console.log(this.state.valid)
     return (
       <div className="movieSearch">
