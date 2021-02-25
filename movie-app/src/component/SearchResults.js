@@ -20,7 +20,7 @@ class SearchResults extends Component {
   //in the search bar on initial render.
   componentDidMount= async (props) => {
     const movieSearch = this.props.location.state.title
-    const movieData1 = await axios.get(`http://www.omdbapi.com/?apikey=38e29c7e&s=${movieSearch}`)
+    const movieData1 = await axios.get(`https://www.omdbapi.com/?apikey=38e29c7e&s=${movieSearch}`)
     const resultsString=movieData1.data.Response;
     // console.log(movieData1)
    
@@ -53,7 +53,7 @@ class SearchResults extends Component {
         if(this.props.location.state.title!==prevProps.location.state.title){
       
           const movieSearch = this.props.location.state.title
-          const movieData1 = await axios.get(`http://www.omdbapi.com/?apikey=38e29c7e&s=${movieSearch}`);
+          const movieData1 = await axios.get(`https://www.omdbapi.com/?apikey=38e29c7e&s=${movieSearch}`);
           const resultsString=movieData1.data.Response;
 
           if(resultsString==="False"){

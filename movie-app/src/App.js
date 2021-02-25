@@ -21,7 +21,7 @@ class App extends Component{
     super(props);
     this.state={
       movieData:[],
-      news: [],
+      // news: [],
       watchList: [],
       apiDataLoaded: false
     }
@@ -33,7 +33,7 @@ class App extends Component{
     const movieData3=await axios.get("http://www.omdbapi.com/?apikey=38e29c7e&t=blazing+saddles")
     const movieData4=await axios.get("http://www.omdbapi.com/?apikey=38e29c7e&t=inception")
     const movieData5=await axios.get("http://www.omdbapi.com/?apikey=38e29c7e&t=caddyshack")
-    const news = await axios.get("https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=e444bb227c874f1f850afa4ab753e1fc");
+    // const news = await axios.get("http://newsapi.org/v2/top-headlines?sources=google-news&apiKey=e444bb227c874f1f850afa4ab753e1fc");
     
     const movieData = [
       movieData1.data,
@@ -46,7 +46,7 @@ class App extends Component{
     //console.log(news.data.articles);
     this.setState ({
       movieData: movieData,
-      news: news.data.articles,
+      // news: news.data.articles,
       apiDataLoaded: true
     })
   }
@@ -61,7 +61,7 @@ class App extends Component{
 
   render(){
     console.log(this.state.movieData.Title)
-    console.log(this.state.news)
+    // console.log(this.state.news)
     console.log(this.props)
   return (
     <div>
@@ -95,7 +95,7 @@ class App extends Component{
                 <WatchList watchList={this.state.watchList}  {...routerProps} />
                  )}/>  
                 
-                <Articles exact path="/news" news={this.state.news} />
+                {/* <Articles exact path="/news" news={this.state.news} /> */}
                  </Switch>
 
           <Footer />
