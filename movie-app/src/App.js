@@ -82,19 +82,9 @@ class App extends Component{
             <SearchDetail {...routerProps} />
           )} />
 
-          {/* <Route exact path="/Login" render={(routerProps)=>(        
-          <Login {...routerProps}/>
-          )}/> */}
-
           <Route exact path="/SearchResults" render={(routerProps) => (
             <SearchResults {...routerProps}/>
           )}/>
-
-      
-        
-
-          {/* line below will be used when login functionality is created */}
-          {/* <Route exact path="/Login" component={Login}/> */}
           
           <Route exact path="/Register" render={(routerProps)=>(
           <Register {...routerProps}/>

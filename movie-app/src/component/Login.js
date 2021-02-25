@@ -38,7 +38,7 @@ import Register from './Register'
            return(user.username===state.username&&user.password==state.password)
        })
        console.log(foundUser);
-       foundUser ? props.history.push('/'):props.history.push('/Login')
+       foundUser ? props.history.push('/'):<h1>login failed</h1>
        }
     
     
@@ -67,7 +67,7 @@ import Register from './Register'
                />
             </form>
             <div className="Register-Link">
-                <h4 className="Signup-Here">Not a user?<br/>Sign up {<Link to="/Register"> Here</Link>}</h4>
+                <h4 className="Signup-Here">Not a user?<br/>Sign up<br></br> {<Link to="/Register"> Here</Link>}</h4>
 
             </div>
             </div>
