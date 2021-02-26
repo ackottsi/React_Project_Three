@@ -75,7 +75,7 @@ Learning to create an app using React that allows people to see details of movie
 ---
 
 #### Code snippet:
-This allows for the addition or the removal of horses/trainers:
+This allows for multiple searches to be performed per website visit:
 ```
 //component did Update handles all subsequent searches after initial search
 componentDidUpdate= async (prevProps)=>{
